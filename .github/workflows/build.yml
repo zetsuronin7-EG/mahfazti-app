@@ -3,9 +3,6 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./mahfazti-app
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
@@ -31,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
-          path: mahfazti-app/android/app/build/outputs/apk/debug/app-debug.apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
