@@ -1,0 +1,8 @@
+{
+  "name": "محفظتي - تتبع المصاريف والمحافظ",
+  "description": "تطبيق ويب تقدمي (PWA) متطور باللغة العربية لإدارة وتتبع المحافظ المالية، التحويلات اللحظية، والمصاريف اليومية مع تقارير وإحصائيات تفاعلية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

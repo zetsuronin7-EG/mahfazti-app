@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Luxury Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a10" />
+      <stop offset="50%" stop-color="#0c1720" />
+      <stop offset="100%" stop-color="#051213" />
+    </linearGradient>
+
+    <!-- Emerald Luxury Leather Gradient -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="45%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+
+    <!-- Top Flap Gradient -->
+    <linearGradient id="flapGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+
+    <!-- Polished Champagne Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="25%" stop-color="#fde047" />
+      <stop offset="55%" stop-color="#eab308" />
+      <stop offset="85%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="512" height="512" rx="136" fill="url(#bgGrad)" />
+
+  <!-- Ambient Luxury Emerald Glow -->
+  <circle cx="256" cy="256" r="150" fill="#0d9488" opacity="0.16" filter="url(#softGlow)" />
+
+  <!-- Gold Outer Trim Ring -->
+  <rect x="96" y="126" width="320" height="260" rx="42" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.45" />
+
+  <!-- Main Wallet Body -->
+  <rect x="106" y="136" width="300" height="240" rx="36" fill="url(#emeraldGrad)" filter="url(#dropShadow)" />
+
+  <!-- Elegant Inner Gold Piping -->
+  <rect x="114" y="144" width="284" height="224" rx="28" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.8" />
+
+  <!-- Geometric Card / Document Silhouette inside Wallet -->
+  <path d="M 146 170 L 366 170 C 374 170 380 176 380 184 L 380 230 L 132 230 L 132 184 C 132 176 138 170 146 170 Z" fill="#042f2e" opacity="0.6" />
+  
+  <!-- Subtle Gold Card Rim -->
+  <line x1="160" y1="186" x2="352" y2="186" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+
+  <!-- Origami / Diagonal Flap Facets -->
+  <path d="M 114 144 L 256 250 L 398 144" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6" />
+  <path d="M 114 144 L 256 250 L 114 350 Z" fill="#042f2e" opacity="0.25" />
+  <path d="M 398 144 L 256 250 L 398 350 Z" fill="#042f2e" opacity="0.25" />
+
+  <!-- Wallet Envelope Flap Top -->
+  <path d="M 120 146 Q 256 210 392 146 L 256 255 Z" fill="url(#flapGrad)" opacity="0.85" />
+
+  <!-- Center Chic Gold Lock / Clasp -->
+  <g filter="url(#dropShadow)">
+    <!-- Clasp Base -->
+    <rect x="232" y="228" width="48" height="58" rx="14" fill="url(#goldGrad)" />
+    <!-- Clasp Inset -->
+    <rect x="238" y="234" width="36" height="46" rx="9" fill="#042f2e" />
+    <!-- Clasp Center Jewel / Pin -->
+    <circle cx="256" cy="257" r="6" fill="url(#goldGrad)" />
+    <!-- Polished Highlight -->
+    <rect x="240" y="236" width="32" height="12" rx="4" fill="#ffffff" opacity="0.3" />
+  </g>
+
+  <!-- Elegant Brand Sparkle Accent -->
+  <g transform="translate(372, 114) scale(0.9)">
+    <path d="M 20 0 L 25 15 L 40 20 L 25 25 L 20 40 L 15 25 L 0 20 L 15 15 Z" fill="url(#goldGrad)" opacity="0.95" />
+  </g>
+</svg>
