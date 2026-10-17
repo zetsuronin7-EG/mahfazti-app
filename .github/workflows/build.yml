@@ -16,7 +16,7 @@ jobs:
       - name: Install Capacitor
         run: |
           npm install @capacitor/core @capacitor/cli @capacitor/android --legacy-peer-deps
-          npx cap init "MyWallet" "com.mywallet.app" --web-dir=dist
+          echo '{"appId": "com.mywallet.app", "appName": "MyWallet", "webDir": "dist"}' > capacitor.config.json
           npx cap add android
           npx cap sync
       - name: Build APK
