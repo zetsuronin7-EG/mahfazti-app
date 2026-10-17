@@ -10,12 +10,12 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-package-lock
       - name: Build Web App
         run: npm run build
       - name: Install Capacitor
         run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android
+          npm install @capacitor/core @capacitor/cli @capacitor/android --no-package-lock
           npx cap init "MyWallet" "com.mywallet.app" --web-dir=dist
           npx cap add android
           npx cap sync
